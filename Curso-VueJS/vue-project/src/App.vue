@@ -1,5 +1,8 @@
 <template>
-    <PrimeiroComponente/>
+    <div>
+      <PrimeiroComponente/>
+      <p>O dado de app é: {{testando}}</p>  
+    </div>
 </template>
 
 
@@ -10,6 +13,11 @@
     name: 'App', //exportando o componente App
     components: {
       PrimeiroComponente //exportando outros componentes
+    },  
+    data(){
+      return{
+        testando: "teste"
+      }
     }
   }
 </script>
