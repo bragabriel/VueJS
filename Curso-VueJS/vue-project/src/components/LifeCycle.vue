@@ -13,13 +13,20 @@ export default{
     created(){
         setTimeout(() => {
             this.nome = 'Gabriel'
-        }, 1000)
+        }, 1000);
+
+        this.lifeCycle();
         
     },
     mounted(){
         setTimeout(() => {
             this.nome = 'Braga'
         }, 2000)   
+    },
+    methods:{
+        lifeCycle(){
+            console.log('executou')
+        }
     }
 }
 </script>
