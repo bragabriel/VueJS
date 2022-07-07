@@ -1,7 +1,9 @@
 <template>
-    <img :src="avatar" :alt="descricao">
-    <!-- :src  OU  v-bind:src   =    são a mesma coisa -->
-    <Reutilizacao/>
+    <div>
+        <img :src="avatar" :alt="descricao">
+        <!-- :src  OU  v-bind:src   =    são a mesma coisa -->
+        <Reutilizacao/>
+    </div>
 </template> 
 
 <script>

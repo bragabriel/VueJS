@@ -1,38 +1,38 @@
 <template>
     <ul>
-        <li>
-            <a href="">Home</a>
-            <a href="">Projetos</a>
-            <a href="">Contatos</a>
-        </li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Projetos</a></li>
+        <li><a href="">Contatos</a></li>
+        <li v-if="esta_logado"><a href="#">Meu Perfil</a></li>
     </ul>
 </template>
 
 <script>
-    export default{
-        name: 'Header'
+    export default {
+        name: 'Header',
+        props: ["esta_logado"] /* Passando propos como Array */
     }
 </script>
 
 <style scoped>
-    ul{
+    ul {
         list-style: none;
         display: flex;
         background: #999;
     }
 
-    li{
+    li {
         margin-right: 10px;
     }
 
-    a{
+    a {
         color: #fff;
         text-decoration: none;
         transition: 0.5s;
         padding: 10px;
     }
 
-    a:hover{
+    a:hover {
         color: turquoise
     }
 </style>
